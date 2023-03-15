@@ -52,24 +52,24 @@ font-family: 'Sono', sans-serif; */
     display: flex;
     flex-direction: column;
     background-color: rgba(189, 167, 190, 0);
-    height: 800px;
+    height: 750px;
     justify-content: center;
     align-items: center;
-    color:rgb(42, 5, 44) ;
+    color:rgb(255, 255, 255) ;
 }
 #home::before{
     content: "";
     position: absolute;
-    background-image: url('https://cdn.wallpapersafari.com/70/80/zo9LSi.jpg');
+    background-image: url('https://wallpapercave.com/wp/wp5587051.jpg');
     background-size: cover;
     background-repeat: no-repeat;
-    height: 850px;
+    height: 750px;
     width: 100%;
     z-index: -1; /*The z-index CSS property sets the z-order of a positioned element and its descendants or flex items. Overlapping elements with a larger z-index cover those with a smaller one. */
     /* opacity: 1; */
 }
 .main{
-    border: 1px solid whitesmoke;
+    /* border: 1px solid rgb(223, 55, 195); */
     padding: 40px;
     display: flex;
     flex-direction: column;
@@ -93,14 +93,16 @@ font-family: 'Sono', sans-serif; */
 .btn{
     padding: 10px 30px;
     background-color: transparent;
+    color: rgb(255, 255, 255);
     transition: .6s;
     border-radius: 3px;
     border-color: whitesmoke;
 }
 .btn:hover{
     cursor: pointer;
-    background-color: rgb(236, 229, 216);
-    box-shadow: 0 0 5px whitesmoke ,0 0 10px rgb(210, 199, 199),0 0 15px rgb(183, 146, 146);
+    color: black;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 0 2px rgb(255, 255, 255);
 }
 /* end home section  */
 /* About section */
@@ -193,7 +195,7 @@ font-family: 'Sono', sans-serif; */
     box-shadow: 0 0 20px rgb(77, 14, 81);
 }
 .box img{
-        width: 160px;
+        width: 165px;
         height: 140px;
         align-self: center;
 }
