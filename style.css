@@ -1,0 +1,229 @@
+/* font family */
+
+/*font-family: 'Eczar', serif;
+font-family: 'Genos', sans-serif;
+font-family: 'Josefin Slab', serif;
+font-family: 'Lobster', cursive;
+font-family: 'Marck Script', cursive;
+font-family: 'Mynerve', cursive;
+font-family: 'Patrick Hand', cursive;
+font-family: 'Sacramento', cursive;
+font-family: 'Shantell Sans', cursive;
+font-family: 'Signika', sans-serif;
+font-family: 'Sono', sans-serif; */
+/*________________________________________________________ */
+ 
+/* "*" is universal selector */
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    
+}
+/* navbar section */
+.navbar{
+    display: flex;
+    justify-content: center;/* */
+    align-items: center;
+    background-color: rgb(65, 10, 66);
+    position: sticky;
+    top: 0;
+}
+.navbar ul{
+    display: flex;
+    margin: 20px;
+    list-style: none;
+}
+.navbar ul li{
+    font-size: 15px;
+}
+.navbar ul li a{
+    text-decoration: none;
+    padding: 20px;
+    color: rgb(255, 255, 255);
+}
+.navbar ul li a:hover{
+    color: aqua;
+    text-shadow: 1px 2px 2px rgb(110, 226, 255);
+}
+/* End navbar */
+/* home section  */
+#home{
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(189, 167, 190, 0);
+    height: 800px;
+    justify-content: center;
+    align-items: center;
+    color:rgb(42, 5, 44) ;
+}
+#home::before{
+    content: "";
+    position: absolute;
+    background-image: url('https://cdn.wallpapersafari.com/70/80/zo9LSi.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 850px;
+    width: 100%;
+    z-index: -1; /*The z-index CSS property sets the z-order of a positioned element and its descendants or flex items. Overlapping elements with a larger z-index cover those with a smaller one. */
+    /* opacity: 1; */
+}
+.main{
+    border: 1px solid whitesmoke;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    left: 20%;
+    top: 30%;
+}
+.heading1{
+    font-family: 'Signika', sans-serif;
+    text-align: center;
+    margin: 10px; 
+}
+.heading{
+    font-family: 'Genos', sans-serif;
+    text-align: center;
+    margin: 10px;
+    font-size: 52px;
+    
+}
+.btn{
+    padding: 10px 30px;
+    background-color: transparent;
+    transition: .6s;
+    border-radius: 3px;
+    border-color: whitesmoke;
+}
+.btn:hover{
+    cursor: pointer;
+    background-color: rgb(236, 229, 216);
+    box-shadow: 0 0 5px whitesmoke ,0 0 10px rgb(210, 199, 199),0 0 15px rgb(183, 146, 146);
+}
+/* end home section  */
+/* About section */
+#about{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    margin-bottom: 50px;
+}
+#pic{
+   display: flex; 
+}
+#pic img{
+    width: 300px;
+    height: 350px;
+    border-radius: 8px;
+}
+#pic img:hover{
+    transition: .6s;
+    box-shadow: 0 0 15px rgb(0, 0, 0);
+}
+#intro{
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    padding: 50px;
+    padding-right: 100px;
+}
+#intro h2{
+    margin-bottom: 10px;
+    text-align: center;
+    font-family: 'Eczar', serif;
+}
+/* End About section */
+/* project section */
+#project{
+    display: flex;
+    flex-direction: column;
+    background-color:  rgb(143, 93, 146);
+    align-items: center;
+    padding: 20px;
+}
+.gallery{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.gallery img{
+    height: 250px;
+    width: 360px;
+    margin: 10px;
+    transform: scale(0.5s);
+    border-radius: 8px;
+}
+.gallery img:hover{
+    width: 362px;
+    height: 252px;
+    transition: .6s;
+    border-radius: 5px;
+    box-shadow: 0 0 20px rgb(54, 8, 55);
+}
+/* End project section */
+/* service section */
+#service{
+    display: flex;
+    flex-direction: column;
+    padding:10px;
+}
+.row{
+    display: flex;
+}
+.box{
+    display: flex;
+    flex-direction: column;
+    width: 295px;
+    height: 400px;
+    border: 1px solid rgb(65, 8, 69);
+    margin: 10px;
+    padding: 20px;
+    text-align: justify;
+    border-radius: 10px;
+    background: linear-gradient(to top,rgb(162, 121, 162) 50%,white 50%);
+    background-size: 100% 200%;
+    transition: all 0.8s;
+}
+.box:hover{
+    background-position:left bottom ;
+    color: whitesmoke;
+    border: none;
+    box-shadow: 0 0 20px rgb(77, 14, 81);
+}
+.box img{
+        width: 160px;
+        height: 140px;
+        align-self: center;
+}
+/* End service section */
+/* contact section */
+#contact{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(143, 93, 146);
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.input{
+    padding: 10px;
+    margin: 5px;
+    width: 350px;
+    border-radius: 8px;
+}
+#sent{
+    padding: 10px;
+    margin: 5px;
+    transition: .6s;
+    border-radius: 3px;
+    background-color: transparent;
+}
+#sent:hover{
+    background-color: rgb(65, 17, 68);
+    color: rgb(255, 255, 255);
+}
